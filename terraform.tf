@@ -6,9 +6,10 @@ terraform {
       }
     }
     required_version = ">= 1.4.0"
+
     backend "s3" {
         bucket = "gkinfrahub-terraform-bucket"
-        region = "us-east-1"
+        region = "ap-south-1"
         dynamodb_table = "gkinfrahub-terraform-bucket-lock"
   }
 }
